@@ -1,0 +1,16 @@
+micronaut:
+  application:
+    name: security
+  security:
+    endpoints:
+      login:
+        path: /v1/tokens
+      introspection:
+        path: /v1/tokens/introspect
+    authentication: bearer
+    token:
+      jwt:
+        signatures:
+          secret:
+            generator:
+              secret: '"${JWT_GENERATOR_SIGNATURE_SECRET:pleaseChangeThisSecretForANewOne}"'
