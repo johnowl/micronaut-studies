@@ -1,14 +1,8 @@
 package com.johnowl
 
-import com.fasterxml.jackson.annotation.JsonFormat
-import com.johnowl.command.CreateUserCommand
 import io.micronaut.core.annotation.Introspected
-import io.micronaut.data.annotation.DateCreated
-import io.micronaut.data.annotation.DateUpdated
 import java.time.Clock
-import java.time.Instant
 import java.time.LocalDateTime
-import java.time.ZonedDateTime
 import javax.persistence.*
 
 @Introspected
